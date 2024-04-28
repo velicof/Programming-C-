@@ -93,61 +93,61 @@ int main() {
 
 
 
-    // 2 - Suma divizorilor unui numar
-    // int n;
-    // cin >> n;
-    // long long sum = 0;
-    // for (int i = 1; i * i <= n; ++i) {
-    //     if (n % i == 0) {
-    //         sum += i;
-    //         if (n / i != i) {
-    //             sum += n / i;
-    //         }
-    //     }
-    // }
+    2 - Suma divizorilor unui numar
+    int n;
+    cin >> n;
+    long long sum = 0;
+    for (int i = 1; i * i <= n; ++i) {
+        if (n % i == 0) {
+            sum += i;
+            if (n / i != i) {
+                sum += n / i;
+            }
+        }
+    }
 
 
-    // 3 - Descompunerea in factori primi:
+    3 - Descompunerea in factori primi:
 
-    // int n;
-    // cin >> n;
-    // int d = 2;
-    // while (n != 1) {
-    //     if (n % d == 0) {
-    //         int p = 0;
-    //         while (n % d == 0) {
-    //             n /= d;
-    //             ++p;
-    //         }
-    //         cout << d << "^" << p << " * ";
-    //     }
-    //     if (d == 2) d = 3;
-    //     else d += 2;
-    //     if (d * d > n) {
-    //         d = n;
-    //     }
-    // }
+    int n;
+    cin >> n;
+    int d = 2;
+    while (n != 1) {
+        if (n % d == 0) {
+            int p = 0;
+            while (n % d == 0) {
+                n /= d;
+                ++p;
+            }
+            cout << d << "^" << p << " * ";
+        }
+        if (d == 2) d = 3;
+        else d += 2;
+        if (d * d > n) {
+            d = n;
+        }
+    }
 
     
 
 
 
-    // 4 - Cel mai mare divizor comun
-    // Numere prime intre ele => gcd(a, b) = 1
+    4 - Cel mai mare divizor comun
+    Numere prime intre ele => gcd(a, b) = 1
 
-    // int a, b;
-    // cin >> a >> b;
-    // while (a != 0 && b != 0) {
-    //     if (a >= b) {
-    //         a %= b;
-    //     }
-    //     else {
-    //         b %= a;
-    //     }
-    // }
+    int a, b;
+    cin >> a >> b;
+    while (a != 0 && b != 0) {
+        if (a >= b) {
+            a %= b;
+        }
+        else {
+            b %= a;
+        }
+    }
 
-    // if (a == 0) cout << b << '\n';
-    // else cout << a << '\n';
+    if (a == 0) cout << b << '\n';
+    else cout << a << '\n';
 
     int a, b;
     cin >> a >> b;int 
