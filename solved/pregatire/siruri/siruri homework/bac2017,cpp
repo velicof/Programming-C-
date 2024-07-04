@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+#include <cstring>
+using namespace std;
+
+int main() {
+   char s[105];
+   cin.getline(s, 105);
+   int n = strlen(s);
+
+    char *p = strtok (s , " ");
+    bool ok = false;
+    while (p != NULL){
+        
+    
+        if (strstr(p,"DO") != NULL || strstr(p,"RE") != NULL || strstr(p,"MI") != NULL || strstr(p,"FA") != NULL || strstr(p,"SOL") != NULL || strstr(p,"LA") != NULL || strstr(p,"SI") != NULL){
+            cout << p << endl;
+            ok = true;
+        }
+        p = strtok(NULL, " .!:,");      
+    }
+    return 0;
+}
